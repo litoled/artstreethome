@@ -4,51 +4,51 @@
   <%= f.error_notification %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
     <%= f.label :user_first_name, required: true %>
-    <%= f.input :user_first_name %>
+    <%= f.text_field :user_first_name %>
   </div>
 
   <div class="field">
     <%= f.label :user_last_name, required: true %>
-    <%= f.input :user_last_name %>
+    <%= f.text_field :user_last_name %>
   </div>
 
   <div class="field">
     <%= f.label :password %>
-    <%= f.input :password, required: true %>
+    <%= f.text_field :password, required: true %>
   </div>
 
  <div class="field">
     <%= f.label :password_confirmation %>
-    <%= f.input :password_confirmation, required: true %>
+    <%= f.text_field :password_confirmation, required: true %>
   </div>
 
   <div class="field">
-    <%= f.label :artist_name %><br />
-    <%= f.input :artist_name %>
+    <%= f.label :artist_name %>
+    <%= f.text_field :artist_name %>
   </div>
 
 <!--photo ici-->
 
   <div class="field">
-    <%= f.label :phone_number %><br />
+    <%= f.label :phone_number %>
     <%= f.text_field :phone_number, required: true %>
   </div>
 
   <div class="field">
-    <%= f.label :rib %><br />
-    <%= f.input :rib, required: true %>
+    <%= f.label :rib %>
+    <%= f.text_field :rib, required: true %>
   </div>
 
   <div class="field">
     <%= f.label :work_area %>
     <!--ICI CHAMP DE RECHERCHE + PLUSIEURS REPONSES POSSIBLES-->
-    <%= f.input :work_area, required: true %>
+    <%= f.text_field :work_area, required: true %>
   </div>
 
   <div class="field">
@@ -58,7 +58,7 @@
 
   <div class="field">
     <%= f.label :links %>
-    <%= f.input :links %>
+    <%= f.text_field :links %>
   </div>
 
 
