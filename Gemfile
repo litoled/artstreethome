@@ -1,4 +1,12 @@
 source 'https://rubygems.org'
+gem 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
+
 gem 'rails',                   '5.1.2'
 gem 'bcrypt',                  '3.1.11'
 gem 'devise'
