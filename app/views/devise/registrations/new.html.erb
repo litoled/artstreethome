@@ -3,11 +3,64 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true %>
   </div>
+
+  <div class="field">
+    <%= f.label :user_first_name, required: true %>
+    <%= f.text_field :user_first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_last_name, required: true %>
+    <%= f.text_field :user_last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password, required: true %>
+  </div>
+
+ <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.text_field :password_confirmation, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :artist_name %>
+    <%= f.text_field :artist_name %>
+  </div>
+
+<!--photo ici-->
+
+  <div class="field">
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rib %>
+    <%= f.text_field :rib, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :work_area %>
+    <!--ICI CHAMP DE RECHERCHE + PLUSIEURS REPONSES POSSIBLES-->
+    <%= f.text_field :work_area, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :links %>
+    <%= f.text_field :links %>
+  </div>
+
 
   <div class="form-actions">
     <%= f.button :submit, "Sign up" %>
@@ -15,3 +68,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+
