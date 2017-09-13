@@ -1,5 +1,4 @@
 
-
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				
 			<!-- Indicators -->
@@ -12,17 +11,29 @@
 		  <!-- Wrapper for slides -->
 		  
 		 	 <div class="carousel-inner">
-		 	 	  <h1>La rue est vers l'art</h1>
+		 	 	<div class="carousel-caption">
+        			<h1>La rue est vers l'art</h1>
+      			</div>
+		 	 	  
 			  	  <div class="item active">
 			     	 <%= image_tag("samourai.jpg", :alt => "Danseur") %>
+			     	 <div class="carousel-caption">
+			     	 	<h4>Malga-dance</h4>
+			     	 </div>
 			   	 </div>
 
 			   	 <div class="item">
 			   	   <%= image_tag("peintre.jpg", :alt => "Portraitiste") %>
+			   	    <div class="carousel-caption">
+			     	 	<h4>Portraitiste</h4>
+			     	</div>
 			   	 </div>
 
 			   	 <div class="item">
 			    	  <%= image_tag("violon.jpg", :alt => "Musicien")%>
+			    	  	<div class="carousel-caption">
+			     	 		<h4>Violonniste</h4>
+			     	 	</div>
 			   	 </div>
 		  	</div>
 		  
@@ -38,24 +49,12 @@
 
 		</div>
 	
-	<h3>Les Prestations</h3>
-		
-	
+
+		<h3>Les Prestations</h3>
+		<p>Animez vos événements avec un artiste de rue et tout ça à l'intérieur, bien au chaud.</p>
+  			
 
 	
-	<h3>Les Artistes</h3>
+		<h3>Les Artistes</h3>
+		<p>Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
 	
-
-<h2>Bienvenue sur ArtStreetHome</h2>
-
-
-
-<p>
-  <% if user_signed_in? %>
-    <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to 'Se connecter', new_user_session_path %>
-  <% end %>
-</p>
-  
-  
