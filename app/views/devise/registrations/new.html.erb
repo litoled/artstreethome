@@ -2,8 +2,12 @@
 
 <h2>Créer un compte</h2>
 
+
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
+
+  
 
   <div class="field">
     <%= f.label :email %>
@@ -22,20 +26,22 @@
 
   <div class="field">
     <%= f.label :Mot_de_passe %>
-    <%= f.text_field :password, required: true %>
+    <%= f.text_field :password, required: true, input_html: { maxlength: 20 } %>
   </div>
 
- <div class="field">
+  <div class="field">
     <%= f.label :Confirmation_mot_de_passe %>
     <%= f.text_field :password_confirmation, required: true %>
   </div>
 
   <div class="field">
     <%= f.label :Nom_d_artiste %>
-    <%= f.text_field :artist_name %>
+    <%= f.text_field :artist_name, required: true %>
   </div>
 
-<!--photo ici-->
+  <div class="field">
+    <%= f.input :file, label: 'Photo', as: :file %>
+  </div>
 
   <div class="field">
     <%= f.label :Numéro_de_téléphone %>
@@ -68,7 +74,5 @@
     <%= f.button :submit, "Créer un compte" %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
 
 </div>
