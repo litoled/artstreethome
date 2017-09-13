@@ -5,20 +5,34 @@
  
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-      <h1 class="navbar-text">ART STREET HOME</h1>
+    <div class="navbar navbar-toggleable-md navbar-light bg-faded" id="bs-example-navbar-collapse-1">
+
+      <h1 class="navbar-text"><a href ="/">ART STREET HOME</a></h1>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/static_pages/concept">Concept</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Se connecter<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Sign out</a></li>
-          </ul>
+        <% if user_signed_in? %>
+        <li>
+        <%= current_user.email %>
+        </li>        
+        <li>
+        <%= link_to "Sign Out",  destroy_user_session_path, method: :delete %>
+        </li>
+        <li>
+        <%= link_to "Edit account", edit_user_registration_path %>
+        </li>
+        <% else %>
+        <li>
+        <%= link_to "Se connecter",  new_user_session_path %>
+        </li>
+        <li>
+        <%= link_to "Créer un compte",  new_user_registration_path %>
+        </li>
+        <% end %>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
   </div><!-- /.container-fluid -->
 </nav>
+
 </header>
+
