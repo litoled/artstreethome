@@ -1,9 +1,13 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+main{
+	margin: 0px;
+}
 
-.contactmember p{
-	text-align: center;
+.container_page_concept {
+	background-color: white;
+	font-size: 14px;
 }
 
 .container_concept {
@@ -12,15 +16,57 @@
 	justify-content: space-around;
 }
 
-.element_concept{
+.element_concept {
 	height: 230px;
 	width: 300px;
 	border: 1px solid grey;
 	margin: 10px;
 	padding: 10px;
 	box-shadow: 2px 2px 0px #aaa; 
-	background-color: purple;
-	color: white;
+	background-color: rgb(45,146,109);
+	color: rgb(198,246,216);
 	text-align: center;
 	border-radius: 10%;
+}
+
+.title_concept {
+	text-align: center;
+}
+
+.contactmember p {
+	text-align: center;
+}
+
+.container_page_faq {
+	background-image: url("wood.jpg"); 
+	font-size: 16px;
+}
+
+.questions_fréquentes {
+	font-size: 24px;
+	color: #662E1C;
+}
+
+.titles_faq {
+	font-size: 22px;
+	font-style: italic;	
+	color: #662E1C;
+}
+
+.question_tags {
+	color: #805A3B;
+}
+
+
+.container_page_blog {
+	background-image: url("guitariste.jpg"); 
+	color: #b2dbd5;
+}
+
+.pitch_blog {
+	font-size: 16px;	
+}
+
+.container_page_blog a {
+	color: white;
 }
