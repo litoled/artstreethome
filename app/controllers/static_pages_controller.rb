@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+  def artUse
+  end  
+
   def concept
   end
 
