@@ -22,9 +22,15 @@ main{
 	border: 1px solid grey;
 	margin: 10px;
 	padding: 10px;
+
 	box-shadow: 2px 2px 0px #aaa; 
 	background-color: rgb(45,146,109);
 	color: rgb(198,246,216);
+
+	box-shadow: 2px 2px 0px #aaa;
+	background-color: purple;
+	color: white;
+
 	text-align: center;
 	border-radius: 10%;
 }
@@ -57,7 +63,6 @@ main{
 	color: #805A3B;
 }
 
-
 .container_page_blog {
 	background-image: url("guitariste.jpg"); 
 	color: #b2dbd5;
@@ -69,4 +74,23 @@ main{
 
 .container_page_blog a {
 	color: white;
+}
+
+.artUseBtn{
+	width: 100%;
+	padding-bottom: 5%;
+	height: 50px !important;
+	font-size: 30px !important;
+	color: white !important;
+	text-decoration: none !important;
+}
+
+#artUseH1{
+	margin-bottom: 6%;
+	text-align:center;
+	font-size: 40px;
+}
+
+.artUseBtnDiv{
+	margin-bottom: 5%;
 }

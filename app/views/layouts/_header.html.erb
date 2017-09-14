@@ -2,18 +2,17 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
- 
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="navbar navbar-toggleable-md navbar-light bg-faded" id="bs-example-navbar-collapse-1">
-
-      <h1 class="navbar-text"><a href ="/">ART STREET HOME</a></h1>
+        <%= link_to "ART STREET HOME", root_path, id: "logo" %>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/static_pages/concept">Concept</a></li>
         <% if user_signed_in? %>
         <li>
         <%= current_user.email %>
-        </li>        
+        </li>
         <li>
         <%= link_to "Sign Out",  destroy_user_session_path, method: :delete %>
         </li>
@@ -25,7 +24,7 @@
         <%= link_to "Se connecter",  new_user_session_path %>
         </li>
         <li>
-        <%= link_to "Créer un compte",  new_user_registration_path %>
+        <%= link_to "Créer un compte",  artUse_path %>
         </li>
         <% end %>
         </li>
@@ -35,4 +34,3 @@
 </nav>
 
 </header>
-
