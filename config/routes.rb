@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/faq'
 
+  resources :prestations
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
