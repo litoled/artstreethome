@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/faq'
 
+
+  resources :prestations
+
   get '/artUse', to: 'static_pages#artUse'
 
 

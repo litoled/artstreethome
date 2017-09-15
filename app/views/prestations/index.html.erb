@@ -1,0 +1,4 @@
+<h1>Liste des prestations</h1>
+<% @prestations.each do |prestation| %>
+  <p><a href="/prestations/<%= prestation.id %>"><%= prestation.titre %></a></p>
+<% end %>

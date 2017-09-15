@@ -1,0 +1,48 @@
+<div class="new_prestation">
+
+<h2>Ajouter une nouvelle prestation</h2>
+
+<%= simple_form_for @prestation do |f| %>
+  <%= f.error_notification %>
+
+  <div class="field">
+    <%= f.label :titre %>
+    <%= f.text_field :titre, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :categorie, required: true %>
+    <%= f.text_field :categorie %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description, required: true %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tarif %>
+    <%= f.text_field :tarif, required: true, input_html: { maxlength: 4 } %> euros
+  </div>
+
+  <div class="field">
+    <%= f.label :duree %>
+    <%= f.text_field :duree, required: true %>
+  </div>
+
+    <div class="field">
+    <%= f.label :lieu %>
+    <%= f.text_field :lieu, required: true %>
+  </div>
+
+    <div class="field">
+    <%= f.label :lien %>
+    <%= f.text_field :lien, required: true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Créer une prestation", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+</div>
