@@ -2,25 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.home{
+	margin-top: -120px;
+}
 
-title {
+.home .title {
 	text-align: center;
 }
 
-.carousel-caption h1{
+.home .carousel-caption h1{
 	text-align:center;
    	width: 100%;
    	background-color: transparent;
    	margin-bottom: 270px;
 }
 
-.carousel-inner{
+.home .carousel-inner{
 	height: 400px;
 	min-height: 400px;
 	background-position: 50% 20%;
 }
 
-.item{
+.home .item{
 background-size: cover;
 width:100%;
 position:relative;
@@ -28,7 +31,21 @@ position:relative;
 }
 
 
-main{
+.home .main{
 	padding: 20px;
 }
 
+.home .home_concept{
+	height: 300px;
+	color: grey;
+}
+
+.home .home_prestations{
+	background-color: yellow;
+
+}
+
+
+.home .home_artistes{
+	
+}

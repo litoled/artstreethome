@@ -1,3 +1,32 @@
 // Place all the styles related to the Prestations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* NEW */
+
+.new_prestation{
+	margin: auto;
+
+}
+
+.new_prestation .field{
+	width: 50%;
+	margin:auto;
+	padding-bottom: 15px;
+	color: black;
+}
+
+/* INDEX */
+
+.index_prestation{
+	margin: auto;
+}
+
+.index_prestation .titre{
+	margin: auto;
+	text-align: center;
+}
+
+.index_prestation .index{
+	margin: auto;
+}
