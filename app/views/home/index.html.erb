@@ -1,223 +1,99 @@
-
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				
-			<!-- Indicators -->
-		 	 <ol class="carousel-indicators">
-		  	 	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		   	 	<li data-target="#myCarousel" data-slide-to="1"></li>
-		   	 	<li data-target="#myCarousel" data-slide-to="2"></li>
-		 	 </ol>
-
-		  <!-- Wrapper for slides -->
-		  
-		 	 <div class="carousel-inner">
-		 	 	<div class="carousel-caption">
-        			<h1>La rue est vers l'art</h1>
-        			<h3>Réservez des prestations d'art de rue à la maison!</h3>
-      			</div>
-		 	 	  
-			  	 <div class="item active">
-			  	  	<div class="carousel-caption">
-			     	 	<p>#MalgaDance</p>
-			     	</div>
-			     	 <%= image_tag("samourai.jpg", :alt => "Danseur") %>
-			   	 </div>
-
-			   	<div class="item">
-			   	   <%= image_tag("peintre.jpg", :alt => "Portraitiste") %>
-			   	    <div class="carousel-caption">
-			     	 	<p>#Portraitiste</p>
-			     	</div>
-			   	</div>
-
-			   	 <div class="item">
-			    	  <%= image_tag("violon.jpg", :alt => "Musicien")%>
-			    	  	<div class="carousel-caption">
-			     	 		<p>#Violonniste</p>
-			     	 	</div>
-			   	 </div>
-		</div>
-		  
-		  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-
-		</div>
-	
-
-
-
-
-<div class="container">
-  <h3>Les Prestations</h3>
-  <p>Animez vos événements avec un artiste de rue et tout ça à l'intérieur, bien au chaud.</p>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="carousel slide multi-item-carousel" id="theCarousel">
-        <div class="carousel-inner">
-          <div class="item active">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("clem-onojeghuo-155586.jpg",:alt =>"Portraitiste", :class => "img-responsive") %></a></div>
-          </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("clem-onojeghuo-183605.jpg", :alt =>"Art Motifs", :class => "img-responsive") %></a></div>
-          </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("clem-onojeghuo-206823.jpg", :alt =>"Graffeur", :class => "img-responsive") %></a></div>
-          </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("hatim-belyamani-43883.jpg", :class => "img-responsive") %></a></div>
-          </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><<%= image_tag("jay-wennington-2813.jpg", :class => "img-responsive") %></a></div>
-          </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("jez-timms-157470.jpg", :class => "img-responsive") %></a></div>
-          </div>
-          <!-- add  more items here -->
-          <!-- Example item start:  -->
+<div class="home">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+            <!-- Indicators -->
+             <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+             </ol>
+          <!-- Wrapper for slides -->
           
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><%= image_tag("matheus-ferrero-183749.jpg", :class => "img-responsive") %></a></div>
-          </div>
+             <div class="carousel-inner">
+                <div class="carousel-caption">
+                    <h1>La rue est vers l'art</h1>
+                </div>
+                  
+                  <div class="item active">
+                     <%= image_tag("samourai.jpg", :alt => "Danseur") %>
+                     <div class="carousel-caption">
+                        <h4>Malga-dance</h4>
+                     </div>
+                 </div>
+                 <div class="item">
+                   <%= image_tag("peintre.jpg", :alt => "Portraitiste") %>
+                    <div class="carousel-caption">
+                        <h4>Portraitiste</h4>
+                    </div>
+                 </div>
+                 <div class="item">
+                      <%= image_tag("violon.jpg", :alt => "Musicien")%>
+                        <div class="carousel-caption">
+                            <h4>Violonniste</h4>
+                        </div>
+                 </div>
+            </div>
           
-          <!--  Example item end -->
+          <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
         </div>
-        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-      </div>
-    </div>
-  </div>
+    
+        <div class="home_concept">
+            <h3> Vous avez aimé un artiste de rue, un concert dans le métro, retrouvez l'artiste qui vous a tant charmé et achetez lui une prestation personnalisée</h3>
+        </div>
+        <div class="home_searchbox">                               
+            <form method="post" action="/prestations" enctype="application/x-www-form-urlencoded">
+                <div class="searchbox_field">
+                    <select id="choix" name="choix" style="">   
+                        <option value="">-- Ce que je cherche --</option>
+                        <option value="danse">Je veux accueillir des danseurs pour un événément privé</option>
+                        <option value="musique">Je cherche des musiciens pour un événement privé</option>  
+                        <option value="theatre ou clown">Je cherche des acteurs et/ou des clowns pour un évenement privé</option>           
+                    </select>
+                </div>
+                <div class="searchbox_field">
+                    <select id="region" name="region">
+                        <option value="0">-- Où je cherche --</option>
+                                                    <option value="-1" disabled="" style="background-color: rgb(239, 239, 239); font-weight: bold; color: rgb(0, 0, 0);">FRANCE</option>
+                                                        <option value="27">Paris</option>
+                                                        <option value="25">Lyon</option>
+                                                        <option value="26">Marseille</option>
+                    </select>
+                </div>
+                <div class="searchbox_field">
+                    <input type="submit" value="Rechercher" class="bt_submit" id="bt_recherche">
+                </div>
+            </form>
+        </div>
+
+        <div class="home_prestations">
+        
+        <h3>Les Prestations</h3>
+        <p>Animez vos événements avec un artiste de rue et tout ça à l'intérieur, bien au chaud.</p>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="home_artistes"> 
+        <h3>Les Artistes</h3>
+        <p>Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
+        </div>
+        <div class="home_recommandations">  
+        <h3>La rue est vers l'art - ils en parlent</h3>
+        <p>Ils parlent de nous dans les médias...</p>
+        </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-
-
-
-<div class="container">
-	<div class="raw">
-		<h3>Les Prestations</h3>
-	</div>
-	<div class="raw">
-		<p>Animez vos événements avec un artiste de rue et tout ça à l'intérieur, bien au chaud.</p>
-	</div>
-	<div class='row'>
-    <div class='col-md-10'>
-      <div id="media" class= "carousel slide" data-ride="carousel">
-
- 			<ol class="carousel-indicators">
-		  	 	<li data-target="#media" data-slide-to="0" class="active"></li>
-		   	 	<li data-target="#media" data-slide-to="1"></li>
-		   	 	<li data-target="#media" data-slide-to="2"></li>
-		 	 </ol>
-
-        <div class="carousel-inner">
-          <div class="item  active">
-
-			<div class="row">
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-155586.jpg",:alt =>"Portraitiste") %></a>
-              </div>          
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-183605.jpg", :alt =>"Art Motifs") %></a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-206823.jpg", :alt =>"Graffeur") %></a>
-              </div> 
-            </div>       
-		</div>
-		<div class="item">
-            <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-183605.jpg", :alt =>"Art Motifs") %></a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-206823.jpg", :alt =>"Graffeur") %></a>
-              </div> 
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("hatim-belyamani-43883.jpg") %></a>
-              </div>        
-            </div>
-        </div>
-        <div class="item">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("clem-onojeghuo-206823.jpg", :alt =>"Graffeur") %></a>
-              </div> 
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("hatim-belyamani-43883.jpg") %></a>
-              </div>      
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("hatim-belyamani-43883.jpg") %></a>
-              </div>          
-        </div>
-		<div class="item">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("hatim-belyamani-43883.jpg") %></a>
-              </div>          
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><<%= image_tag("jay-wennington-2813.jpg") %></a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("jez-timms-157470.jpg") %></a>
-              </div>        
-            </div>
-        </div>
-
-		<div class="item">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("matheus-ferrero-183749.jpg") %></a>
-              </div>          
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("matheus-ferrero-183749.jpg") %></a>
-              </div>
-              <div class="col-md-4">
-                <a class="thumbnail" href="#"><%= image_tag("matheus-ferrero-183749.jpg") %></a>
-              </div>      
-            </div>
-        </div>
-
-		<a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-        <a data-slide="next" href="#media" class="right carousel-control">›</a>
-
-
-      </div>
-    </div>
-    </div>			
-</div>
--->
-	
-		<h3>Les Artistes</h3>
-		<p>Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
-	

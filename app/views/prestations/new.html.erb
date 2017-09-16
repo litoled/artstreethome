@@ -1,0 +1,50 @@
+<div class="new_prestation">
+
+    <div class="field">
+    <h2>Ajouter une nouvelle prestation</h2>
+    </div>
+
+<%= simple_form_for @prestation do |f| %>
+  <%= f.error_notification %>
+
+  <div class="field" class="form-group">
+    <%= f.label :titre %>
+    <%= f.text_field :titre, autofocus: true, class: "form-control" %>
+  </div>
+
+  <div class="field" class="form-group">
+    <%= f.label :categorie, required: true %>
+    <%= f.text_field :categorie , class: "form-control" %>
+  </div>
+
+  <div class="field" class="form-group">
+    <%= f.label :description, required: true %>
+    <%= f.text_field :description, class: "form-control", style: 'height: 100px' %>
+  </div>
+
+  <div class="field" class="form-group">
+    <%= f.label :tarif %>
+    <%= f.text_field :tarif, required: true, class: "form-control", input_html: { maxlength: 4 } %>
+  </div>
+
+  <div class="field" class="form-group">
+    <%= f.label :duree %>
+    <%= f.text_field :duree, required: true, class: "form-control" %>
+  </div>
+
+    <div class="field" class="form-group">
+    <%= f.label :lieu %>
+    <%= f.text_field :lieu, required: true , class: "form-control" %>
+  </div>
+
+    <div class="field" class="form-group">
+    <%= f.label :lien %>
+    <%= f.text_field :lien, required: true , class: "form-control" %>
+  </div>
+
+  <div class ="field" class="form-actions">
+    <%= f.submit "Créer une prestation", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+</div>

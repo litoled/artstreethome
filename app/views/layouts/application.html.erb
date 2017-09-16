@@ -13,6 +13,11 @@
   <%= render 'layouts/header' %>
   	
   <main>    
+  <%= render 'layouts/navbarUser' %>
+  <%= render 'layouts/navbarArtiste' %>
+  <main>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
   </main>

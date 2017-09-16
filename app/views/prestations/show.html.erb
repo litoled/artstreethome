@@ -1,0 +1,16 @@
+# app/views/prestations/show.html.erb
+<h1><%= @prestation.titre %></h1>
+<h3><%= @prestation.categorie %></h3>
+<p><%= @prestation.description %></p>
+<p><%= @prestation.tarif %></p>
+<p><%= @prestation.duree %></p>
+<p><%= @prestation.lieu %></p>
+<p><%= @prestation.lien %></p>
+<%= form_tag "/prestations/#{@prestation.id}", method: "delete" do %>
+  <input type="submit" value="Supprimer la prestation" />
+<% end %>
+<%= form_tag "/prestations/#{@prestation.id}", method: "update" do %>
+  <input type="submit" value="Modifier la prestation" />
+<% end %>
+
+<p><a href="/prestations">Retourner à l’index</a></p>git 
