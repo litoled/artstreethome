@@ -30,22 +30,58 @@ position:relative;
 	
 }
 
+.home .home_concept{
+	height: 100px;
+	color: white;
+	background-color: black;
+	margin: auto;
+	text-align: center;
+	padding: 20px 20px 40px 20px;
 
-.home .main{
-	padding: 20px;
 }
 
-.home .home_concept{
-	height: 300px;
-	color: grey;
+.home .home_searchbox{
+	height: 100px;
+	color: white;
+	background-color: black;
+	margin: auto;
+	text-align: center;
+	padding: 20px 20px 40px 20px;
+}
+
+.home .home_searchbox .searchbox_field{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.searchbox_field #choix, .searchbox_field #region {
+    padding: 12px;
+    width: 290px;
+    color: #202020;
+    font-size: 17px;
 }
 
 .home .home_prestations{
 	background-color: yellow;
-
+	margin: auto;
+	height: 300px;
+	padding: 20px;
+	text-align: center;
 }
 
 
 .home .home_artistes{
-	
+	background-color: orange;
+	margin: auto;
+	height: 300px;
+	padding: 20px;
+	text-align: center;
+}
+
+.home .home_recommandations{
+	background-color: green;
+	margin: auto;
+	height: 300px;
+	padding: 20px;
+	text-align: center;
 }
