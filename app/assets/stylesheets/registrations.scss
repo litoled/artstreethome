@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.registrations {
+  
+}
+
+
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -24,23 +29,22 @@ $gray-medium-light: #eaeaea;
 
 .registrations {
 	margin-left: 40px;
-	font-family: Arial;
-	
+	font-family: Arial;	
 }
 
-
 .btnGras{
-	color:red;
+	color:black;
 }
 
 h2 { 
 	color: rgb(153,51,255);
-	
-
 }
-
 
 .field {
-	color: rgb(255,51,153);
-	margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  width:400px; 
+  height:60px; 
 }
+

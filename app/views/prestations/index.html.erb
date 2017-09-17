@@ -1,4 +1,15 @@
-<h1>Liste des prestations</h1>
-<% @prestations.each do |prestation| %>
-  <p><a href="/prestations/<%= prestation.id %>"><%= prestation.titre %></a></p>
-<% end %>
+<div class="index_prestation">
+
+	<div class = "titre">
+	<h1>Liste des prestations</h1>
+	</div>
+
+	<div class ="index">
+	<% @prestations.each do |prestation| %>
+		<div class ="prestation_each">
+	  	<p><a href="/prestations/<%= prestation.id %>"><%= prestation.titre %></a></p>
+	  	</div>
+	<% end %>
+	</div>
+
+</div>
