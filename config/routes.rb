@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/faq'
 
+
   get 'artistes/account'
 
   get 'artistes/calendrier'
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
   get 'users/prestation'
 
   get 'users/profile'
+
 
   resources :prestations
 
