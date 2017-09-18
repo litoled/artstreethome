@@ -34,7 +34,7 @@ gem 'dragonfly',               '1.1.3'
 
 gem 'barista'
 gem 'therubyracer', :require => nil
-gem 'dragonfly'
+
 
 
 group :development, :test do
