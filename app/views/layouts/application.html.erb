@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <main>
+  <main>
       <%= render 'layouts/header' %>
       <% if user_signed_in? %>
         <%= render 'layouts/navbarUser' %>
@@ -20,27 +20,14 @@
       <% end %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-
-<<<<<<< HEAD
-  <%= render 'layouts/header' %>
-  	
-  <main>    
-  <%= render 'layouts/navbarUser' %>
-  <%= render 'layouts/navbarArtiste' %>
-  <main>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+    <%= render 'layouts/footer' %>
+    <script src="../js/cours.js"></script>
     <%= yield %>
   </main>
-  <%= render 'layouts/footer' %>
-  <script src="../js/cours.js"></script>
+  
 
-=======
-      <%= yield %>
-    </main>
     <%= render 'layouts/footer' %>
->>>>>>> 1d44455e09a559b69d9051ddc0350c9ee1ac2ae8
+
   </body>
 
 </html>
