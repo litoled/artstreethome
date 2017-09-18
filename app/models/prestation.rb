@@ -1,5 +1,6 @@
 class Prestation < ApplicationRecord
 
+
   belongs_to :artiste
   validates :artiste_id, presence: true
 
