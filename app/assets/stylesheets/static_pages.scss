@@ -1,8 +1,13 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-main{
+
+main {
 	margin: 0px;
+}
+
+.decouvrez_l_equipe, .pitch_concept {
+	font-size: 18px;
 }
 
 .container_page_concept {
@@ -10,37 +15,31 @@ main{
 	font-size: 14px;
 }
 
-.container_concept {
+.container {
 	display: flex;
-	flex-wrap:wrap;
-	justify-content: space-around;
+	flex-direction: row;
 }
 
-.element_concept {
-	height: 230px;
-	width: 300px;
-	border: 1px solid grey;
-	margin: 10px;
-	padding: 10px;
-
+.box_procedure {
+	border: 1px grey;
 	box-shadow: 2px 2px 0px #aaa; 
-	background-color: rgb(45,146,109);
-	color: rgb(198,246,216);
-
-	box-shadow: 2px 2px 0px #aaa;
-	background-color: purple;
+	background-color: #3b5998;
 	color: white;
-
-	text-align: center;
-	border-radius: 10%;
+	width: 600px;
 }
 
 .title_concept {
 	text-align: center;
 }
 
-.contactmember p {
-	text-align: center;
+.text_element_concept {
+	font-size: 16px;
+}
+
+.prenom {
+	font-size:18px;
+	font-weight: bold;
+	font-family: Calibri;
 }
 
 .container_page_faq {
