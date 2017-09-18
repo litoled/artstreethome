@@ -9,8 +9,19 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
+  <body>
 
+    <main>
+      <%= render 'layouts/header' %>
+      <% if user_signed_in? %>
+        <%= render 'layouts/navbarUser' %>
+      <% elsif artiste_signed_in? %>
+        <%= render 'layouts/navbarArtiste' %>
+      <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
+<<<<<<< HEAD
   <%= render 'layouts/header' %>
   	
   <main>    
@@ -25,6 +36,11 @@
   <%= render 'layouts/footer' %>
   <script src="../js/cours.js"></script>
 
+=======
+      <%= yield %>
+    </main>
+    <%= render 'layouts/footer' %>
+>>>>>>> 1d44455e09a559b69d9051ddc0350c9ee1ac2ae8
   </body>
 
 </html>
