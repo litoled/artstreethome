@@ -1,66 +1,61 @@
 <div class="home">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				
-			<!-- Indicators -->
-		 	 <ol class="carousel-indicators">
-		  	 	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		   	 	<li data-target="#myCarousel" data-slide-to="1"></li>
-		   	 	<li data-target="#myCarousel" data-slide-to="2"></li>
-		 	 </ol>
-
-		  <!-- Wrapper for slides -->
-		  
-		 	 <div class="carousel-inner">
-		 	 	<div class="carousel-caption">
-        			<h1>La rue est vers l'art</h1>
-      			</div>
-		 	 	  
-			  	  <div class="item active">
-			     	 <%= image_tag("samourai.jpg", :alt => "Danseur") %>
-			     	 <div class="carousel-caption">
-			     	 	<h4>Malga-dance</h4>
-			     	 </div>
-			   	 </div>
-
-			   	 <div class="item">
-			   	   <%= image_tag("peintre.jpg", :alt => "Portraitiste") %>
-			   	    <div class="carousel-caption">
-			     	 	<h4>Portraitiste</h4>
-			     	</div>
-			   	 </div>
-
-			   	 <div class="item">
-			    	  <%= image_tag("violon.jpg", :alt => "Musicien")%>
-			    	  	<div class="carousel-caption">
-			     	 		<h4>Violonniste</h4>
-			     	 	</div>
-			   	 </div>
-		  	</div>
-		  
-		  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-
-		</div>
-	
-		<div class="home_concept">
-			<h3> Vous avez aimé un artiste des rues, un concert dans le métro, retrouvez l'artiste qui vous a tant charmé et achetez lui une prestation personnalisée</h3>
-		</div>
-
-		<div class="home_searchbox">                               
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+            <!-- Indicators -->
+             <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+             </ol>
+          <!-- Wrapper for slides -->
+          
+             <div class="carousel-inner" style="height:400px;">
+                <div class="carousel-caption">
+                    <h1>La rue est vers l'art</h1>
+                </div>
+                  
+                  <div class="item active">
+                     <%= image_tag("samourai.jpg", :alt => "Danseur") %>
+                     <div class="carousel-caption">
+                        <h4>Malga-dance</h4>
+                     </div>
+                 </div>
+                 <div class="item">
+                   <%= image_tag("peintre.jpg", :alt => "Portraitiste") %>
+                    <div class="carousel-caption">
+                        <h4>Portraitiste</h4>
+                    </div>
+                 </div>
+                 <div class="item">
+                      <%= image_tag("violon.jpg", :alt => "Musicien")%>
+                        <div class="carousel-caption">
+                            <h4>Violonniste</h4>
+                        </div>
+                 </div>
+            </div>
+          
+          <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    
+        <div class="home_concept" style="height:80px;">
+            <h3> Vous avez aimé un artiste de rue, un concert dans le métro, retrouvez l'artiste qui vous a tant charmé et achetez lui une prestation personnalisée</h3>
+        </div>
+        <div class="home_searchbox" style="height:70px;">                               
             <form method="post" action="/prestations" enctype="application/x-www-form-urlencoded">
                 <div class="searchbox_field">
-                    <select id="choix" name="choix" style="">	
+                    <select id="choix" name="choix" style="">   
                         <option value="">-- Ce que je cherche --</option>
                         <option value="danse">Je veux accueillir des danseurs pour un événément privé</option>
-                        <option value="musique">Je cherche des musiciens pour un événement privé</option>	
-                        <option value="theatre ou clown">Je cherche des acteurs et/ou des clowns pour un évenement privé</option>			
+                        <option value="musique">Je cherche des musiciens pour un événement privé</option>  
+                        <option value="theatre ou clown">Je cherche des acteurs et/ou des clowns pour un évenement privé</option>           
                     </select>
                 </div>
                 <div class="searchbox_field">
@@ -78,22 +73,65 @@
             </form>
         </div>
 
-
-
-		<div class="home_prestations">
-		<h3>Les Prestations</h3>
-		<p>Animez vos événements avec un artiste de rue et tout ça à l'intérieur, bien au chaud.</p>
-  		</div>
-
-		<div class="home_artistes">	
-		<h3>Les Artistes</h3>
-		<p>Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
-		</div>
-
-		<div class="home_recommandations">	
-		<h3>La rue est vers l'art - ils en parlent</h3>
-		<p>Ils parlent de nous dans les médias...</p>
-		</div>
-
+          
+  <div class="row home_prestations" style="background-color:yellow; height:400px;">
+    <h3>Les Incontournables</h3>
+    <p style="font-size: 20px">Notre sélection du mois pour animer vos soirées avec d'étonnants artistes de rue!</p>
+  <div class="col-md-3" style="background-color:yellow;">
+    <div class="thumbnail" style="background-color:yellow; height:200px;">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("clem-onojeghuo-155586.jpg",:alt =>"Portraitiste", :class => "img-rounded", :style => "height:200px; width: 250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold;">Portraitiste</p>
+          <p>(à partir de 50€)</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3" style="background-color:yellow;">
+    <div class="thumbnail" style="height:200px; background-color:yellow">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("clem-onojeghuo-183605.jpg", :alt =>"Art Motifs", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold;">Fresque Collective</p>
+          <p>(à partir de 80€)</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3" style="background-color:yellow;">
+    <div class="thumbnail" style="height:200px; background-color:yellow;">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("elijah-henderson-130237.jpg", :alt =>"Cracheurs de feux", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold;">Cracheuse de feux</p>
+          <p>(à partir de 100 €)</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3" style="background-color:yellow;">
+    <div class="thumbnail" style="height:200px; background-color:yellow">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("ian-espinosa-222445.jpg", :alt =>"Danceuse classique à domicile", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold;">Danceuse classique à domicile</p>
+          <p>(à partir de 80€)</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
-	
+</div>
+
+
+
+        <div class="home_artistes"> 
+        <h3>Les Artistes</h3>
+        <p style="font-size: 20px">Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
+        </div>
+        <div class="home_recommandations">  
+        <h3>La rue est vers l'art - ils en parlent</h3>
+        <p>Ils parlent de nous dans les médias...</p>
+        </div>
+</div>

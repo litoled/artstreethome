@@ -1,87 +1,142 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .home{
-	margin-top: -120px;
+    margin-top: -120px;
 }
-
 .home .title {
-	text-align: center;
+    text-align: center;
 }
-
 .home .carousel-caption h1{
-	text-align:center;
-   	width: 100%;
-   	background-color: transparent;
-   	margin-bottom: 270px;
+    font-family: Georgia;
+    color:  #FFF8DC;
+    font-size: 60;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align:center;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 270px;
 }
-
 .home .carousel-inner{
-	height: 400px;
-	min-height: 400px;
-	background-position: 50% 20%;
+    height: 250px;
+    min-height: 180px;
+    background-position: 50% 20%;
 }
-
 .home .item{
 background-size: cover;
 width:100%;
 position:relative;
-	
+    
 }
-
 .home .home_concept{
-	height: 100px;
-	color: white;
-	background-color: black;
-	margin: auto;
-	text-align: center;
-	padding: 20px 20px 40px 20px;
-
+    height: 100px;
+    color: white;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
 }
-
 .home .home_searchbox{
-	height: 100px;
-	color: white;
-	background-color: black;
-	margin: auto;
-	text-align: center;
-	padding: 20px 20px 40px 20px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
 }
-
 .home .home_searchbox .searchbox_field{
     display: inline-block;
     margin-right: 10px;
 }
-
 .searchbox_field #choix, .searchbox_field #region {
     padding: 12px;
     width: 290px;
     color: #202020;
     font-size: 17px;
 }
-
 .home .home_prestations{
-	background-color: yellow;
-	margin: auto;
-	height: 300px;
-	padding: 20px;
-	text-align: center;
+    background-color: yellow;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
 }
-
-
 .home .home_artistes{
-	background-color: orange;
-	margin: auto;
-	height: 300px;
-	padding: 20px;
-	text-align: center;
+    background-color: orange;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.home .home_recommandations{
+    background-color: green;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
 }
 
-.home .home_recommandations{
-	background-color: green;
-	margin: auto;
-	height: 300px;
-	padding: 20px;
-	text-align: center;
+//CSS for carousel prestations
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.thumbnail{
+border:none !important;
+  
+}
+
+.home-prestations a:link 
+{ 
+ text-decoration:none; 
+} 
+
+.home h3{
+  font-weight:600;
 }
