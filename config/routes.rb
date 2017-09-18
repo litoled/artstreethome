@@ -10,11 +10,29 @@ Rails.application.routes.draw do
 
   get 'static_pages/faq'
 
+  get 'artistes/account'
+
+  get 'artistes/calendrier'
+
+  get 'artistes/prestation'
+
+  get 'artistes/profile'
+
+  get 'artistes/reservations'
+
+  get 'users/artistes'
+
+  get 'users/panier'
+
+  get 'users/prestation'
+
+  get 'users/profile'
 
   resources :prestations
 
   get '/artUse', to: 'static_pages#artUse'
 
+  get '/signInArtUse', to: 'static_pages#signInArtUse'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

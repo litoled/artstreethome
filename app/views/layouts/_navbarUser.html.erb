@@ -4,12 +4,11 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "USER", root_path, class: 'navbarUser', id:'navbarUser' %></li>
       </ul>
-      <ul class ="nav navbar-nav navbar-right">  
-        <li><%= link_to "PROFILE", root_path, class: 'navbarUser' %></li>
-        <li><%= link_to "PRESTATION", root_path, class: 'navbarUser' %></li>
-        <li><%= link_to "CALENDRIER", root_path, class: 'navbarUser' %></li>
-        <li><%= link_to "RESERVATIONS", root_path, class: 'navbarUser' %></li>
-        <li><%= link_to "ACCOUNT", root_path, class: 'navbarUser' %></li>
+      <ul class ="nav navbar-nav navbar-right">
+        <li><%= link_to "PROFILE", users_profile_path, class: 'navbarUser' %></li>
+        <li><%= link_to "PRESTATION", users_prestation_path, class: 'navbarUser' %></li>
+        <li><%= link_to "ARTISTES", users_artistes_path, class: 'navbarUser' %></li>
+        <li><%= link_to "PANIER", users_panier_path, class: 'navbarUser' %></li>
       </ul>
     </div>
   </div><!-- /.container-fluid -->

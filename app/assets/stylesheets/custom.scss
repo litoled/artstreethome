@@ -14,6 +14,10 @@ $gray-medium-light: #eaeaea;
 
 /* miscellaneous */
 
+.home{
+  padding-top:4%;
+}
+
 .debug_dump {
   clear: both;
   float: left;
@@ -25,7 +29,7 @@ $gray-medium-light: #eaeaea;
 
 * {
 	font-family: Arial;
-	
+
 }
 
 
@@ -33,9 +37,9 @@ $gray-medium-light: #eaeaea;
 	color:red;
 }
 
-h2 { 
+h2 {
 	color: rgb(153,51,255);
-	
+
 
 }
 
@@ -43,5 +47,3 @@ h2 {
 .field {
 	margin-bottom: 16px;
 }
-
-

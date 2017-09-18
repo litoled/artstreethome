@@ -1,6 +1,9 @@
 class StaticPagesController < ApplicationController
   def artUse
-  end  
+  end
+
+  def signInArtUse
+  end
 
   def concept
   end
