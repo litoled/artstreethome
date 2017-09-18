@@ -55,12 +55,16 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (8.0.0)
     autoprefixer-rails (7.1.4)
       execjs
+    barista (1.3.0)
+      coffee-script (~> 2.2)
     bcrypt (3.1.11)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
@@ -91,6 +95,10 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    dragonfly (1.1.3)
+      addressable (~> 2.3)
+      multi_json (~> 1.0)
+      rack (>= 1.3)
     draper (3.0.0)
       actionpack (~> 5.0)
       activemodel (~> 5.0)
@@ -299,6 +307,7 @@ GEM
       activerecord
       kaminari-core (= 1.0.1)
     kaminari-core (1.0.1)
+    libv8 (3.16.14.19-x86_64-darwin-15)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -362,6 +371,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (3.0.0)
     puma (3.9.1)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -412,6 +422,7 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    ref (2.0.0)
     request_store (1.3.2)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
@@ -457,6 +468,9 @@ GEM
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
     temple (0.8.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -490,6 +504,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  barista
   bcrypt (= 3.1.11)
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate (= 1.0.0)
@@ -498,6 +513,7 @@ DEPENDENCIES
   carrierwave (= 1.1.0)
   coffee-rails (= 4.2.2)
   devise
+  dragonfly
   draper
   faker (= 1.7.3)
   fog (= 1.40.0)
@@ -522,6 +538,7 @@ DEPENDENCIES
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
   sqlite3 (= 1.3.13)
+  therubyracer
   turbolinks (= 5.0.1)
   tzinfo-data
   uglifier (= 3.2.0)
