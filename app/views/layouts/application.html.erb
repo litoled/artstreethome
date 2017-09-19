@@ -2,24 +2,31 @@
 <html>
   <head>
     <title>Artstreethome</title>
+    <meta charset="utf-8">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
+  <body>
 
-
-  <%= render 'layouts/header' %>
-  <%= render 'layouts/navbarUser' %>
-  <%= render 'layouts/navbarArtiste' %>
   <main>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+      <%= render 'layouts/header' %>
+      <% if user_signed_in? %>
+        <%= render 'layouts/navbarUser' %>
+      <% elsif artiste_signed_in? %>
+        <%= render 'layouts/navbarArtiste' %>
+      <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <%= render 'layouts/footer' %>
+    <script src="../js/cours.js"></script>
     <%= yield %>
   </main>
-  <%= render 'layouts/footer' %>
+  
+
+    <%= render 'layouts/footer' %>
 
   </body>
 

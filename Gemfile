@@ -9,7 +9,6 @@ gem 'pundit'
 
 gem 'rails',                   '5.1.2'
 gem 'bcrypt',                  '3.1.11'
-gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'mailcatcher'
@@ -29,6 +28,14 @@ gem 'jquery-rails',            '4.3.1'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.7.0'
 gem 'kaminari'
+
+gem 'dragonfly',               '1.1.3'
+
+gem 'barista'
+gem 'therubyracer', :require => nil
+
+
+
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri

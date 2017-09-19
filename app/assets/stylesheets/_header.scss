@@ -1,6 +1,8 @@
 header{
 	background-color: white;
-}
+
+	}
+
 
 #logo {
   float: left;
@@ -14,6 +16,5 @@ header{
 	text-decoration: none;
   &:hover {
     color: blue;
-
-  }
+    }
 }

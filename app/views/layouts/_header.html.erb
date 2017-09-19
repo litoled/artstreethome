@@ -10,27 +10,41 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/static_pages/concept">Le Concept</a></li>
         <% if user_signed_in? %>
-        <li>
-        <%= current_user.email %>
-        </li>
-        <li>
-        <%= link_to "Sign Out",  destroy_user_session_path, method: :delete %>
-        </li>
-        <li>
-        <%= link_to "Edit account", edit_user_registration_path %>
-        </li>
+          <li>
+          <%= current_user.email %>
+          </li>
+          <li>
+          <%= link_to "Sign Out",  destroy_user_session_path, method: :delete %>
+          </li>
+          <li>
+          <%= link_to "Edit account", edit_user_registration_path %>
+          </li>
+        <% elsif artiste_signed_in? %>
+          <li>
+          <%= current_artiste.email %>
+          </li>
+          <li>
+          <%= link_to "Sign Out",  destroy_artiste_session_path, method: :delete %>
+          </li>
+          <li>
+          <%= link_to "Edit account", edit_artiste_registration_path %>
+          </li>
         <% else %>
-        <li>
-        <%= link_to "Se connecter",  new_user_session_path %>
-        </li>
-        <li>
-        <%= link_to "Créer un compte",  artUse_path %>
-        </li>
+          <li>
+          <%= link_to "Se connecter",  signInArtUse_path  %>
+          </li>
+          <li>
+          <%= link_to "Créer un compte",  artUse_path %>
+          </li>
         <% end %>
         </li>
       </ul>
     </div>
   </div><!-- /.container-fluid -->
+    <p>
+        <div class="notice"><%= notice %></div>
+        <div class="alert"><%= alert %></div>
+    </p>
 </nav>
 
 </header>

@@ -1,0 +1,47 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* miscellaneous */
+
+.home{
+padding-top:4%;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+
+* {
+	font-family: Arial;
+
+}
+
+.btnGras{
+	color:red;
+}
+
+h2 {
+	color: rgb(153,51,255);
+}
+
+
+.field {
+	margin-bottom: 16px;
+}
+

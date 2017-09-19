@@ -24,6 +24,21 @@ main {
 	border: 1px grey;
 	box-shadow: 2px 2px 0px #aaa; 
 	background-color: #3b5998;
+
+.element_concept {
+	height: 230px;
+	width: 300px;
+	border: 1px solid grey;
+	margin: 10px;
+	padding: 10px;
+
+	box-shadow: 2px 2px 0px #aaa;
+	background-color: rgb(45,146,109);
+	color: rgb(198,246,216);
+
+	box-shadow: 2px 2px 0px #aaa;
+	background-color: purple;
+
 	color: white;
 	width: 600px;
 }
@@ -43,7 +58,7 @@ main {
 }
 
 .container_page_faq {
-	background-image: url("wood.jpg"); 
+	background-image: url("wood.jpg");
 	font-size: 16px;
 }
 
@@ -54,7 +69,7 @@ main {
 
 .titles_faq {
 	font-size: 22px;
-	font-style: italic;	
+	font-style: italic;
 	color: #662E1C;
 }
 
@@ -63,12 +78,12 @@ main {
 }
 
 .container_page_blog {
-	background-image: url("guitariste.jpg"); 
+	background-image: url("guitariste.jpg");
 	color: #b2dbd5;
 }
 
 .pitch_blog {
-	font-size: 16px;	
+	font-size: 16px;
 }
 
 .container_page_blog a {
@@ -84,11 +99,13 @@ main {
 	text-decoration: none !important;
 }
 
-#artUseH1{
+.artUserH1{
 	margin-bottom: 6%;
 	text-align:center;
 	font-size: 40px;
 }
+
+
 
 .artUseBtnDiv{
 	margin-bottom: 5%;
