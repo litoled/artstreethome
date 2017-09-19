@@ -11,7 +11,6 @@ gem 'rails',                   '5.1.2'
 gem 'bcrypt',                  '3.1.11'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'mailcatcher'
 gem 'simple_form'
 gem 'faker',                   '1.7.3'
 gem 'carrierwave',             '1.1.0'
@@ -37,10 +36,10 @@ gem 'therubyracer', :require => nil
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 group :development do
+  gem 'sqlite3', '1.3.13'
   gem 'web-console',           '3.5.1'
   gem 'listen',                '3.0.8'
   gem 'spring',                '2.0.2'
