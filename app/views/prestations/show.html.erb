@@ -1,16 +1,36 @@
-# app/views/prestations/show.html.erb
+
+<div class ="show_prestation">
 <h1><%= @prestation.titre %></h1>
-<h3><%= @prestation.categorie %></h3>
-<p><%= @prestation.description %></p>
-<p><%= @prestation.tarif %></p>
-<p><%= @prestation.duree %></p>
-<p><%= @prestation.lieu %></p>
-<p><%= @prestation.lien %></p>
+<%= image_tag("img_prestation#{@prestation.id}.jpg",:alt =>"Portraitiste", :style => "height:auto; width: 300px;") %>
+
+<div class = "caption">
+<p>Type de spectacle: <%= @prestation.categorie %></p>
+</div>
+<div class = "caption">
+<p>Description: <%= @prestation.description %></p>
+</div>
+<div class = "caption">
+<p>Tarif: <%= @prestation.tarif %> </p>
+</div>
+<div class = "caption">
+<p>Durée: <%= @prestation.duree %> </p>
+</div>
+<div class = "caption">
+<p>Lieu: <%= @prestation.lieu %></p>
+</div>
+<div class = "caption">
+<p>Pour en savoir plus: <a href = "#{@prestation.lien}"><%= @prestation.lien %></a></p>
+</div>
+<% if artiste_signed_in? %> 
 <%= form_tag "/prestations/#{@prestation.id}", method: "delete" do %>
   <input type="submit" value="Supprimer la prestation" />
 <% end %>
 <%= form_tag "/prestations/#{@prestation.id}", method: "update" do %>
   <input type="submit" value="Modifier la prestation" />
 <% end %>
+<% end %>
+</div>
 
-<p><a href="/prestations">Retourner à l’index</a></p>git 
+<p><a href="/prestations">Retourner à l’index des prestations</a></p>
+
+</div>
