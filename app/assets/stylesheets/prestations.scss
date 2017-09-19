@@ -29,4 +29,54 @@
 
 .index_prestation .index{
 	margin: auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+
+}
+
+.index_prestation .index a{
+	color:white;
+	text-decoration: none;
+}
+
+.index_prestation .index .prestation_each{
+	margin: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+	border: 1px groove grey;
+	background-color: black;
+	color: white;
+}
+
+.index_prestation .index .prestation_each .caption{
+	padding-top: 10px;
+}
+
+
+/* SHOW */
+
+.show_prestation{
+	margin: auto;
+}
+
+.show_prestation .titre{
+	margin: auto;
+	text-align: center;
+}
+
+.show_prestation img{
+	margin: 10px;
+	width: 300px;
+	padding-top: 20px;
+	}
+
+.show_prestation .caption{
+	margin: 10px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 30px;
+	width: 300px;
 }
