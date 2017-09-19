@@ -13,14 +13,19 @@ main {
 .container_page_concept {
 	background-color: white;
 	font-size: 14px;
+	margin: 20px;
+
 }
 
 
 .box_procedure {
-	border: 1px grey;
+	border: 1px solid grey;
 	box-shadow: 2px 2px 0px #aaa; 
-	background-color: #3b5998;
+	margin: 5px;
+	padding: 10px;
+	height: 500px;
 	}
+
 
 .element_concept {
 	height: 230px;
@@ -55,8 +60,8 @@ main {
 }
 
 .container_page_faq {
-	background-image: url("wood.jpg");
 	font-size: 16px;
+	margin: 20px;
 }
 
 .questions_fréquentes {
@@ -103,8 +108,6 @@ main {
 }
 
 
-/*
 .artUseBtnDiv{
 	margin-bottom: 5%;
 }
-*/
