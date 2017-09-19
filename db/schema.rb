@@ -77,9 +77,9 @@ ActiveRecord::Schema.define(version: 20170917212753) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "artiste_id"
     t.string "lieu"
     t.string "lien"
+    t.string "artiste_id"
     t.index ["artiste_id"], name: "index_prestations_on_artiste_id", unique: true
     t.index ["user_id", "created_at"], name: "index_prestations_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_prestations_on_user_id"
