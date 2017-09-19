@@ -50,3 +50,15 @@ h2 {
 	margin-bottom: 16px;
 }
 
+/* form */
+
+.field {
+
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+.field {
+  height: auto !important;
+}
