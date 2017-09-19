@@ -64,9 +64,27 @@ Artiste.create!(email: "artiste_test4@test.com",
              links: "caprice@facebook.com",
              )
 
+Artiste.create!(email: "artiste_test5@test.com",
+             password:              "password",
+             password_confirmation: "password",
+             artist_name: "Camille",
+             phone_number: "06 66 77 88 82",
+             rib: "FR76 20 25 42 43282",
+             work_area: "Marseille",
+             description: "Cracheur de feu",
+             links: "camille@facebook.com",
+             )
 
-
-
+Artiste.create!(email: "artiste_test6@test.com",
+             password:              "password",
+             password_confirmation: "password",
+             artist_name: "Moulouda",
+             phone_number: "06 66 77 88 84",
+             rib: "FR76 20 25 42 43284",
+             work_area: "Paris",
+             description: "Danseuse étoile",
+             links: "moulouda@facebook.com",
+             )
 
 
 
@@ -113,3 +131,22 @@ Prestation.create!(titre: "Street Art Live",
     artiste_id: "4",
     )
 
+Prestation.create!(titre: "Cracheur de feu",
+    categorie: "Spectacle",
+    description: "Un cracheur de feu pour vos événements, à la demande",
+    tarif: "100 euros",
+    duree: "1 heure",
+    lieu: "Marseille",
+    lien: "cracheur@facebook.com",
+    artiste_id: "5",
+    )
+
+Prestation.create!(titre: "Danseuse étoile",
+    categorie: "Spectacle",
+    description: "Une danseuse étoile connue dans tous paris, à la demande, à domicile",
+    tarif: "100 euros",
+    duree: "2 heure",
+    lieu: "Paris",
+    lien: "danseuse@facebook.com",
+    artiste_id: "6",
+    )

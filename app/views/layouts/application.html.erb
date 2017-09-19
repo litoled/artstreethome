@@ -9,9 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
-  <body>
 
-  <main>
+  <body>
+  
       <%= render 'layouts/header' %>
       <% if user_signed_in? %>
         <%= render 'layouts/navbarUser' %>
@@ -20,14 +20,17 @@
       <% end %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-    <%= render 'layouts/footer' %>
-    <script src="../js/cours.js"></script>
+  
+  <main>
+  
+
+  
     <%= yield %>
   </main>
   
 
     <%= render 'layouts/footer' %>
-
+    <script src="../js/cours.js"></script>
   </body>
 
 </html>
