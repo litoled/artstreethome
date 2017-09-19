@@ -10,7 +10,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/static_pages/concept">Le Concept</a></li>
         <% if user_signed_in? %>
-          <li>
+          <li class = "afficher" >
           <%= current_user.email %>
           </li>
           <li>
@@ -20,7 +20,7 @@
           <%= link_to "Edit account", edit_user_registration_path %>
           </li>
         <% elsif artiste_signed_in? %>
-          <li>
+          <li class = "afficher">
           <%= current_artiste.email %>
           </li>
           <li>

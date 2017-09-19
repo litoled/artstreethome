@@ -68,7 +68,7 @@
                     </select>
                 </div>
                 <div class="searchbox_field">
-                    <input type="submit" value="Rechercher" class="bt_submit" id="bt_recherche">
+                    <%= link_to "Submit", prestations_path, class: "btn btn-primary" %>
                 </div>
             </form>
         </div>
@@ -123,16 +123,66 @@
   </div>
 </div>
 </div>
-        <div class="home_artistes"> 
-        <h3>Les Artistes</h3>
-        <p style="font-size: 20px">Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
-        </div>
-        <div class="home_recommandations">  
-        <h3>La rue est vers l'art - ils en parlent</h3>
-        <p>Ils parlent de nous dans les médias...</p>
-        </div>
+
+<div class="row home_artistes" style="background-color:pink; height:400px;">
+    <h3 style="text-align: center; font-weight: 600">Les Artistes</h3>
+    <p style="font-size: 20px; text-align: center;">Nous avons déniché pour vous des artistes extraordinaires. N'hésitez pas à les suivre grâce à ArtStreetHome ou réservez une prestation à la maison!</p>
+
+<div class="col-md-3" style="background-color:pink;">
+    <div class="thumbnail" style="background-color:pink; height:200px;">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("artiste1_lucious.jpg",:alt =>"Soul Music", :class => "img-rounded", :style => "height:200px; width: 250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold; text-align: center">Lucious</p>
+          <p style="text-align: center;">#SoulMusic</p>
+      </div>
+      </a>
 </div>
 
+
+  </div>
+  <div class="col-md-3" style="background-color:pink;">
+    <div class="thumbnail" style="height:200px; background-color:pink">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("artiste6_malouda.jpg", :alt =>"Street Art", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold; text-align: center;">Malouda</p>
+          <p style="text-align: center;">#DanceuseEtoile</p>
+        </div>
+
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3" style="background-color:pink;">
+    <div class="thumbnail" style="height:200px; background-color:pink;">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("artiste5_camille.jpg", :alt =>"Cracheurs de feux", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold; text-align: center;">Camille</p>
+          <p style="text-align: center;">#CracheuseDeFeu</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3" style="background-color:pink;">
+    <div class="thumbnail" style="height:200px; background-color:pink">
+      <a href="#" style="text-decoration:none">
+        <%= image_tag("artiste3_rigober.jpg", :alt =>"Danceuse classique à domicile", :class => "img-rounded", :style => "height:200px; width:250px;") %>
+        <div class="caption">
+          <p style="font-weight: bold; text-align: center;">Rigober</p>
+          <p style="text-align: center;">#ArtPlastique</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+        
+<div class="home_recommandations">
+  <h3 style="text-align: center;">La rue est vers l'art - ils en parlent</h3>
+  <p style="text-align:center;">Ils parlent de nous dans les médias...</p>
+</div>
 
 
 
