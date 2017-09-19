@@ -9,7 +9,6 @@ gem 'pundit'
 
 gem 'rails',                   '5.1.2'
 gem 'bcrypt',                  '3.1.11'
-gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'mailcatcher'

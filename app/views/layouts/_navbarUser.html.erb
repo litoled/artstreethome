@@ -2,13 +2,22 @@
   <div class="container-fluid cl">
     <div class="navbar navbar-toggleable-md navbar-light bg-faded" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "USER", root_path, class: 'navbarUser', id:'navbarUser' %></li>
+        <li><%= link_to "HÔTE / SPECTATEUR", root_path, class: 'navbarUser', id:'navbarUser' %></li>
       </ul>
+
+      <ul class ="nav navbar-nav navbar-right">  
+        <li><%= link_to "PROFIL", root_path, class: 'navbarUser' %></li>
+        <li><%= link_to "PRESTATION", root_path, class: 'navbarUser' %></li>
+        <li><%= link_to "CALENDRIER", root_path, class: 'navbarUser' %></li>
+        <li><%= link_to "RÉSERVATIONS", root_path, class: 'navbarUser' %></li>
+        <li><%= link_to "MON COMPTE", root_path, class: 'navbarUser' %></li>
+
       <ul class ="nav navbar-nav navbar-right">
         <li><%= link_to "PROFILE", users_profile_path, class: 'navbarUser' %></li>
         <li><%= link_to "PRESTATION", users_prestation_path, class: 'navbarUser' %></li>
         <li><%= link_to "ARTISTES", users_artistes_path, class: 'navbarUser' %></li>
         <li><%= link_to "PANIER", users_panier_path, class: 'navbarUser' %></li>
+
       </ul>
     </div>
   </div><!-- /.container-fluid -->
