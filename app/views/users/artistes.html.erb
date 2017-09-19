@@ -1,0 +1,24 @@
+<div class="index_prestation">
+
+	<div class = "titre">
+	<h1>Liste des Artistes</h1>
+	</div>
+
+
+	<div class ="index" class="col-md-3" >
+		<% @artistes.each do |artiste| %>
+		<div class ="prestation_each" class="thumbnail">
+	  	<%=  image_tag(artiste.image_uid,:alt =>"Portraitiste", :style => "height:200px; width: 250px;") %>
+        <div class="caption center-block">
+
+	  	<h3><%= artiste.artist_name %></h3>
+	  	<p> Où <%= artiste.work_area %></p>
+	  	<p> </p>
+	  	</div>
+	  	</a>
+	  	</div>
+	<% end %>
+
+	</div>
+
+</div>

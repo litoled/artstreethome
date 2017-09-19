@@ -28,6 +28,7 @@ Artiste.create!(email: "artiste_test@test.com",
              work_area: "Paris",
              description: "Spécialiste de la soul music, je ferai trembler votre maisonné d'amour",
              links: "lucious@facebook.com",
+             image_uid: "artiste1_lucious.jpg"
              )
 
 Artiste.create!(email: "artiste_test2@test.com",
@@ -39,6 +40,7 @@ Artiste.create!(email: "artiste_test2@test.com",
              work_area: "Paris",
              description: "Spécialiste du portrait",
              links: "pascaline@facebook.com",
+             image_uid: "artiste2_pascaline.jpg"
              )
 
 
@@ -51,6 +53,7 @@ Artiste.create!(email: "artiste_test3@test.com",
              work_area: "Paris",
              description: "Spécialiste des arts plastique",
              links: "rigoberfacebook.com",
+             image_uid: "artiste3_rigober.jpg"
              )
 
 Artiste.create!(email: "artiste_test4@test.com",
@@ -62,6 +65,7 @@ Artiste.create!(email: "artiste_test4@test.com",
              work_area: "Marseille",
              description: "Spécialiste du street art",
              links: "caprice@facebook.com",
+             image_uid:"artiste4_caprice.jpg"
              )
 
 Artiste.create!(email: "artiste_test5@test.com",
@@ -73,6 +77,7 @@ Artiste.create!(email: "artiste_test5@test.com",
              work_area: "Marseille",
              description: "Cracheur de feu",
              links: "camille@facebook.com",
+             image_uid:"artiste5_camille.jpg"
              )
 
 Artiste.create!(email: "artiste_test6@test.com",
@@ -84,6 +89,7 @@ Artiste.create!(email: "artiste_test6@test.com",
              work_area: "Paris",
              description: "Danseuse étoile",
              links: "moulouda@facebook.com",
+             image_uid:"artiste6_malouda.jpg"
              )
 
 

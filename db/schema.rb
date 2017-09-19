@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170917212753) do
+ActiveRecord::Schema.define(version: 20170919134427) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20170917212753) do
     t.string "work_area"
     t.string "description"
     t.string "links"
+    t.string "image_uid"
     t.index ["email"], name: "index_artistes_on_email", unique: true
     t.index ["reset_password_token"], name: "index_artistes_on_reset_password_token", unique: true
   end
@@ -77,9 +78,9 @@ ActiveRecord::Schema.define(version: 20170917212753) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "artiste_id"
     t.string "lieu"
     t.string "lien"
+    t.string "artiste_id"
     t.index ["artiste_id"], name: "index_prestations_on_artiste_id", unique: true
     t.index ["user_id", "created_at"], name: "index_prestations_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_prestations_on_user_id"

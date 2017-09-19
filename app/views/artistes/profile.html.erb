@@ -1,0 +1,23 @@
+<div class = "container">
+  <div class = "row">
+    <div class = "col-md-12">
+      <h1><%= @artiste.artist_name %> </h1>
+    </div>
+    <div class = "col-md-5">
+      <%= image_tag(@artiste.image_uid, class: 'photoArtiste')  %>
+    </div>
+    <div class = "col-md-7">
+      <h3>EMAIL:</h3>
+      <h4><%= @artiste.email %></h4>
+      <h3>PHONE NUMBER:</h3>
+      <h4><%= @artiste.phone_number %></h4>
+      <h3>LIEUX DE TRAVAILLE:</h3>
+      <h4><%= @artiste.work_area %></h4>
+      <h3>LINKS:</h3>
+      <h4><%= @artiste.links %></h4>
+      <h3>DESCRIPTION:</h3>
+      <h4><%= @artiste.description %></h4>
+    </div>
+
+  </div>
+</div>

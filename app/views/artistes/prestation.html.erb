@@ -1,0 +1,30 @@
+<div class="index_prestation">
+
+      	<div class = "titre">
+      	<h1>Liste des prestations</h1>
+      	</div>
+
+
+      	<div class ="index" class="col-md-3" >
+      		<% i = 1 %>
+      		<% @prestations.each do |prestation| %>
+      		<div class ="prestation_each" class="thumbnail">
+      	  	<a href="/prestations/<%= prestation.id %>">
+      	  	<%= image_tag("img_prestation#{i}.jpg",:alt =>"Portraitiste", :style => "height:200px; width: 250px;") %>
+              <div class="caption center-block">
+
+      	  	<h3><%= prestation.titre %></h3>
+      	  	<p> par <%= prestation.artiste.artist_name %></p>
+      	  	<p> <%= prestation.lieu %>, à partir de <%= prestation.tarif %> euros</p>
+      	  	</div>
+      	  	</a>
+      	    <% i += 1 %>
+      	  	</div>
+      	<% end %>
+
+      	</div>
+
+      </div>
+    </div>
+  </div>
+</div>

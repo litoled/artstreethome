@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/faq'
 
+  get 'artistes/artisteShow'
 
   get 'artistes/account'
 
@@ -27,9 +28,6 @@ Rails.application.routes.draw do
 
   get 'users/prestation'
 
-  get 'users/profile'
-
-
   resources :prestations
 
   get '/artUse', to: 'static_pages#artUse'
@@ -44,5 +42,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root 'home#index'
+
+
 
 end
