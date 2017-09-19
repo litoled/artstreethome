@@ -59,6 +59,7 @@
 
 .show_prestation{
 	margin: auto;
+	text-align: center;
 }
 
 .show_prestation .titre{
@@ -68,15 +69,20 @@
 
 .show_prestation img{
 	margin: 10px;
-	width: 300px;
+	width: 500px;
 	padding-top: 20px;
 	}
 
 .show_prestation .caption{
 	margin: 10px;
 	text-align: center;
+	padding: 30px;
+	word-wrap: break-word
+}
+
+.show_prestation .show_prestation_item{
 	background-color: black;
 	color: white;
-	padding: 30px;
-	width: 300px;
+	margin: 30px;
 }
+

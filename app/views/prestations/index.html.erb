@@ -12,7 +12,9 @@
 	  	<a href="/prestations/<%= prestation.id %>">
 	  	<%= image_tag("img_prestation#{i}.jpg",:alt =>"Portraitiste", :style => "height:200px; width: 250px;") %>
         <div class="caption center-block">
+
 	  	<h3><%= prestation.titre %></h3> 
+	  	<p> par <%= prestation.artiste.artist_name %></p>
 	  	<p> <%= prestation.lieu %>, à partir de <%= prestation.tarif %> euros</p>
 	  	</div>
 	  	</a>
